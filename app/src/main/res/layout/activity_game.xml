@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".GameActivity">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/board"
+        android:columnCount="3"
+        android:foregroundGravity="center"
+        android:rowCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerName">
+
+        <ImageView
+            android:id="@+id/view1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:hapticFeedbackEnabled="true"
+            android:onClick="viewClick"
+            android:scaleType="fitCenter"
+            android:tag="1" />
+
+        <ImageView
+            android:id="@+id/view2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:hapticFeedbackEnabled="true"
+            android:onClick="viewClick"
+            android:scaleType="fitCenter"
+            android:tag="2" />
+
+        <ImageView
+            android:id="@+id/view3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:hapticFeedbackEnabled="true"
+            android:onClick="viewClick"
+            android:scaleType="fitCenter"
+            android:tag="3" />
+
+        <ImageView
+            android:id="@+id/view4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:hapticFeedbackEnabled="true"
+            android:onClick="viewClick"
+            android:scaleType="fitCenter"
+            android:tag="4" />
+
+        <ImageView
+            android:id="@+id/view5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:hapticFeedbackEnabled="true"
+            android:onClick="viewClick"
+            android:scaleType="fitCenter"
+            android:tag="5" />
+
+        <ImageView
+            android:id="@+id/view6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:hapticFeedbackEnabled="true"
+            android:onClick="viewClick"
+            android:scaleType="fitCenter"
+            android:tag="6" />
+
+        <ImageView
+            android:id="@+id/view7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:hapticFeedbackEnabled="true"
+            android:onClick="viewClick"
+            android:scaleType="fitCenter"
+            android:tag="7" />
+
+        <ImageView
+            android:id="@+id/view8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:hapticFeedbackEnabled="true"
+            android:onClick="viewClick"
+            android:scaleType="fitCenter"
+            android:tag="8" />
+
+        <ImageView
+            android:id="@+id/view9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:hapticFeedbackEnabled="true"
+            android:onClick="viewClick"
+            android:scaleType="fitCenter"
+            android:tag="9" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/playerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Turn: Player Name"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="53dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout">
+
+        <Button
+            android:id="@+id/restartButton"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+
+            android:onClick="restart"
+            android:text="Restart" />
+
+        <Space
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/exitButton"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:onClick="exit"
+            android:text="Exit" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

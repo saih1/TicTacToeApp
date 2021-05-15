@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/redImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/red" />
+
+    <EditText
+        android:id="@+id/player1EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:ems="10"
+        android:hint="Player 1 (RED)"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/yellowImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/yellow" />
+
+    <EditText
+        android:id="@+id/player2EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:ems="10"
+        android:hint="Player 2 (YELLOW)"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:onClick="clickStart"
+        android:text="Start Game" />
+
+</LinearLayout>
