@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.Objects;
+
 public class GameActivity extends AppCompatActivity
 {
     String player1_id, player2_id;
@@ -99,6 +101,8 @@ public class GameActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
+        Objects.requireNonNull(getSupportActionBar()).hide();
+
         player1_id = getIntent().getStringExtra("Player 1 Name");
         player2_id = getIntent().getStringExtra("Player 2 Name");
         playerTextView = findViewById(R.id.playerName);
